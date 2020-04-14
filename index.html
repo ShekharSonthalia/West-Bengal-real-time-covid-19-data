@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container center">
+    <h1>COVID-19</h1>
+    <h3>West Bengal Live Data</h3>
+    <br>
+    <div class="row center">
+      <div class="col-md-6">
+        <h3 class="center">Confirmed</h3>
+        <h3 class="nn" id="confirm"></h3>
+      </div>
+      <div class="col-md-6">
+        <h3 class="center">Deaths</h3>
+        <h3 class="nn" id="death"></h3>
+      </div>
+    </div>
+
+    <br>
+    <canvas id="myChart" width="300" height="300"></canvas>
+    <br>
+    <h3 class='center'>District wise distribution</h3>
+    <br>
+
+    <div class="card-deck mb-3 text-center">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h3 class="my-0 font-weight-normal" id='0'></h3>
+        </div>
+        <div class="card-body">
+          <h4 class="nn" id="d_0"></h4>
+        </div>
+      </div>
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h3 class="my-0 font-weight-normal" id='1'></h3>
+        </div>
+        <div class="card-body">
+          <h4 class="nn" id="d_1"></h4>
+        </div>
+      </div>
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h3 class="my-0 font-weight-normal" id='2'></h3>
+        </div>
+        <div class="card-body">
+          <h4 class="nn" id="d_2"></h4>
+        </div>
+      </div>
+    </div>
+    <div class="card-deck mb-3 text-center">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h3 class="my-0 font-weight-normal" id='3'></h3>
+        </div>
+        <div class="card-body">
+          <h4 class="nn" id="d_3"></h4>
+        </div>
+      </div>
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h3 class="my-0 font-weight-normal" id='4'></h3>
+        </div>
+        <div class="card-body">
+          <h4 class="nn" id="d_4"></h4>
+        </div>
+      </div>
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h3 class="my-0 font-weight-normal" id='5'></h3>
+        </div>
+        <div class="card-body">
+          <h4 class="nn" id="d_5"></h4>
+        </div>
+      </div>
+    </div>
+    <div class="card-deck mb-3 text-center">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h3 class="my-0 font-weight-normal" id='6'></h3>
+        </div>
+        <div class="card-body">
+          <h4 class="nn" id="d_6"></h4>
+        </div>
+      </div>
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h3 class="my-0 font-weight-normal" id='7'></h3>
+        </div>
+        <div class="card-body">
+          <h4 class="nn" id="d_7"></h4>
+        </div>
+      </div>
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h3 class="my-0 font-weight-normal" id='8'></h3>
+        </div>
+        <div class="card-body">
+          <h4 class="nn" id="d_8"></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/client.js" charset="utf-8"></script>
+</body>
+
+</html>
