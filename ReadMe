@@ -1,0 +1,2 @@
+This is a webapp running on Node.js and Express to provide real time data of covid-19 cases in west bengal, India.
+Heroku platform is used to host the webapp and its mainly client-side app with updates coming in the future.
